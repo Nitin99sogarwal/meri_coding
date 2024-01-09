@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find the Largest Number</title>
+</head>
+<body>
+    <h1>Find the Largest Number</h1>
+    <button onclick="nitin()">Find Largest</button>
+
+    <script>
+        function nitin() {
+            const num1 = parseFloat(prompt("Enter the first number:"));
+            const num2 = parseFloat(prompt("Enter the second number:"));
+            const num3 = parseFloat(prompt("Enter the third number:"));
+            
+            if (num1>num2 && num1>num3) {
+                alert(num1+" is greater than " + num2  + " and  " + num3)
+            }
+            if (num2>num1 && num2>num3) {
+                alert(num2+" is greater than " + num1  + " and " +num3)            }
+            if (num3>num2 && num3>num1) {
+                alert(num3+" is greater than " + num1  + " and " +num2)            }
+            if ( num1==num2==num3){
+                alert( num1 +","+  num2 +","+ num3 + "  are equal")
+
+            }
+            
+        }
+    </script>
+</body>
+</html>

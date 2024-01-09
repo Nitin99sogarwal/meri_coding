@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function nitin(){      
+        let a =parseInt (document.getElementById("first").value);
+        let b =parseInt (document.getElementById("second").value);
+        document.getElementById("answer").value = a+b;
+        }
+    </script>
+    <form>
+      first number: <input type="text" id="first" >  <br><br>
+      second number: <input type="text" id="second" > <br><br>  
+      <input type="button" value="click" onclick="nitin()">      
+      <!-- <button type="button" onclick="nitin()">click</button> -->
+      <input type="reset" value="reset"> <br><br>  
+      answer: <input type="text" id="answer" name="answer"  > <br><br>  
+        </form>
+
+<!-- <script>
+    let a,b,c;
+    function add(first_number,second_number){
+        a=parseInt(first_number);
+        b=parseInt(second_number);
+        c=a+b;
+        alert("result = "+c);
+
+    }
+    function sub(first_number,second_number){
+        a=parseInt(first_number);
+        b=parseInt(second_number);
+        c=a-b;
+        alert("result = "+c);
+
+    }
+    function mul(first_number,second_number){
+        a=parseInt(first_number);
+        b=parseInt(second_number);
+        c=a*b;
+        alert("result = "+c);
+
+    }
+    function div(first_number,second_number){
+        a=parseInt(first_number);
+        b=parseInt(second_number);
+        c=a/b;
+        alert("result = "+c);
+
+    }
+</script>
+        <form>
+           <center ><table border="1" >
+                <tr>
+                <td>first number</td>
+                <td><input type="text" id="first"></td>
+            </tr>
+            <tr>
+                <td>second number</td>
+                <td><input type="text" id="second" >
+            
+                </td>
+            </tr>
+            <tr>
+          <td> <input type="button" value="add" onclick="add(first.value,second.value)">
+           <input type="button" value="sub" onclick="sub(first.value,second.value)">
+        </td>
+        <td>
+           <input type="button" value="mul" onclick="mul(first.value,second.value)">
+
+           <input type="button" value="div" onclick="div(first.value,second.value)">
+           <input type="reset" value="reset">
+
+        </td>
+            </tr>
+        </table>
+        </center>
+        </form>
+        
+     -->
+</body>
+</html>

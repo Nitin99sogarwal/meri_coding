@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="test4()">
+    <script>
+        function test1(){
+            alert("button 1 tested");
+        }
+        function test2(){
+            alert("button 2 tested");
+        }
+        function test3(){
+            alert("button 3 tested");
+        }
+        function test4(){
+            alert("nhr");
+        }
+    </script>
+
+    <h1 id="demo"></h1>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">view date</button>
+    <br><br>
+    <button onclick="test1()">test button 1 </button> <br><br>
+    <button onmouseover="test2()">test button 2 </button> <br><br>
+    <input type="text" onkeydown="test3()">   
+
+
+</body>
+</html>

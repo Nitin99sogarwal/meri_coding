@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nitin.css">
+    <!-- <style>
+        input:hover{
+            background: red;
+        }
+    </style> -->
+</head>
+
+<body>
+    <script>
+        // x=parseInt(prompt("enter number = "));
+        // i=1;
+        // while (i<=x) {
+        //     document.write(i)
+        //     i++;
+        // }
+       
+        function add() {
+            var first = parseInt(document.getElementById("first").value);
+        var second = parseInt(document.getElementById("second").value);
+        var answer = document.getElementById("answer");
+        answer.value= first + second;
+        }
+        function sub() {
+            var first = parseInt(document.getElementById("first").value);
+        var second = parseInt(document.getElementById("second").value);
+        var answer = document.getElementById("answer");
+        answer.value = first - second;
+        }
+        function mul() {
+            var first = parseInt(document.getElementById("first").value);
+        var second = parseInt(document.getElementById("second").value);
+        var answer = document.getElementById("answer");
+        answer.value = first * second;
+        }
+        function divide() {
+            var first = parseInt(document.getElementById("first").value);
+        var second = parseInt(document.getElementById("second").value);
+        var answer = document.getElementById("answer");
+            answer.value = first / second;
+        }
+        
+
+    </script>
+    first number: <input type="text" id="first"><br><br>
+    second number: <input type="text" id="second"><br><br>
+    <input type="button" value="+" onclick="add()" class="input">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="mul()">
+    <input type="button" value="/" onclick="divide()"><br><br>
+    answer: <input type="text" id="answer"><br><br>
+    <input type="reset" value="reset" >
+
+</body>
+
+</html>
